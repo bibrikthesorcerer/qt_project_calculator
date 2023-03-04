@@ -729,7 +729,7 @@
      <x>0</x>
      <y>0</y>
      <width>512</width>
-     <height>21</height>
+     <height>25</height>
     </rect>
    </property>
   </widget>
@@ -754,7 +754,4 @@
    </hints>
   </connection>
  </connections>
- <slots>
-  <slot>onPressZero()</slot>
- </slots>
 </ui>

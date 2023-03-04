@@ -9,6 +9,9 @@ QT_BEGIN_NAMESPACE
 namespace Ui { class MyMainWindow; }
 QT_END_NAMESPACE
 
+enum Operation {plus, minus, multiply, divide};
+
+
 class MyMainWindow : public QMainWindow
 {
     Q_OBJECT
@@ -44,6 +47,10 @@ private slots:
 
     void on_m_pb_clear_all_clicked();
 
+    void on_m_pb_add_clicked();
+
+    void on_m_pb_eq_clicked();
+
 private:
 
     void display_res();
@@ -55,8 +62,11 @@ private:
 
     QStack<double> m_stack;
 
-    double answer;
+    double m_answer = 0;
 
+    double m_current_num = 0;
+
+    Operation m_op_flag;
 
 };
 #endif // MYMAINWINDOW_H

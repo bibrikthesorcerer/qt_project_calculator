@@ -266,7 +266,7 @@ void MyMainWindow::on_m_pb_eq_clicked()
 
 void MyMainWindow::on_m_pb_MS_clicked()
 {
-    m_memory_slot = m_answer;
+    m_memory_slot = m_display.toDouble();
     m_mem_display = "Memory: " + m_mem_display.number(m_memory_slot);
     mem_display_res();
 }
